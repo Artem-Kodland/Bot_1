@@ -14,9 +14,6 @@ async def on_ready():
 async def hello(ctx):
     await ctx.send(f'Привет! Я бот {bot.user}!')
 
-@bot.command()
-async def heh(ctx, count_heh = 5):
-    await ctx.send("he" * count_heh)
 
 @bot.command()
 async def repeat(ctx, times: int, content='repeating...'):
